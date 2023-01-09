@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    animation-name: animateBox;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+    animation-direction: alternate;
+}
+
+@keyframes animateBox{
+    from{
+        width: 150px;
+        height: 150px;
+        background-color: crimson;
+    }
+
+    to{
+        width: 100%;
+        height: 150px;
+        background-color: seagreen;
+    }
+}
